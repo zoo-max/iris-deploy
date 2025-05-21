@@ -17,7 +17,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load model
-with open("model.pkl", "rb") as f:
+with open("random_forest_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Load Iris dataset
