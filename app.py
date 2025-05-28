@@ -15,6 +15,10 @@ from sklearn.datasets import load_iris
 from sklearn.metrics import accuracy_score, confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
+import streamlit as st
+
+st.set_page_config(page_title="halaman2")
+st.title ("Tes")
 
 # Load model
 with open("random_forest_model.pkl", "rb") as f:
@@ -78,3 +82,5 @@ else:
     ax.set_xlabel("Predicted")
     ax.set_ylabel("Actual")
     st.pyplot(fig)
+
+
